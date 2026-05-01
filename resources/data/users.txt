@@ -1,0 +1,7 @@
+admin::admin123::ADMIN::false
+aarav::aarav123::CUSTOMER::1::false
+binita::binita123::CUSTOMER::2::false
+chiranjivi::chiranjivi123::CUSTOMER::3::false
+diya::diya123::CUSTOMER::4::false
+elina::elina123::CUSTOMER::5::false
+furba::furba123::CUSTOMER::6::false

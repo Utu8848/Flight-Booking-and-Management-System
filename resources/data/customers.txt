@@ -1,0 +1,6 @@
+1::Aarav Sharma::9841234567::aarav@gmail.com::false::
+2::Binita Thapa::9851234568::binita@yahoo.com::false::
+3::Chiranjivi Gurung::9861234569::chiranjivi@hotmail.com::false::
+4::Diya Shrestha::9871234570::diya@outlook.com::false::
+5::Elina Rai::9881234571::elina@gmail.com::false::
+6::Furba Tamang::9891234572::furba@yahoo.com::false::

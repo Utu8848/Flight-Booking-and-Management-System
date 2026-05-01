@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Booking System - API Documentation</title>
+</head>
+<body>
+<h1>Flight Booking System</h1>
+
+<h2>Overview</h2>
+<p>
+The Flight Booking System is a comprehensive Java application for managing flight bookings,
+customers, and administrative operations. The system provides both command-line and graphical
+user interfaces with role-based authentication and authorization.
+</p>
+
+<h2>Key Features</h2>
+<ul>
+    <li><strong>Authentication & Authorization:</strong> Secure login system with Admin and Customer roles</li>
+    <li><strong>Flight Management:</strong> Create, update, delete, and search for flights</li>
+    <li><strong>Customer Management:</strong> Register and manage customer accounts</li>
+    <li><strong>Booking Operations:</strong> Book, cancel, and update flight reservations</li>
+    <li><strong>Data Persistence:</strong> File-based storage for all system data</li>
+    <li><strong>Dual Interface:</strong> Both CLI and GUI modes available</li>
+</ul>
+
+<h2>Architecture</h2>
+<p>
+The application follows a layered architecture with clear separation of concerns:
+</p>
+<ul>
+    <li><strong>Model Layer:</strong> Core business entities (Flight, Customer, Booking, User)</li>
+    <li><strong>Command Layer:</strong> Command pattern implementation for all operations</li>
+    <li><strong>Data Layer:</strong> Data persistence and loading mechanisms</li>
+    <li><strong>Presentation Layer:</strong> GUI and CLI interfaces</li>
+    <li><strong>Authentication Layer:</strong> Security and user management</li>
+</ul>
+
+<h2>Package Descriptions</h2>
+<dl>
+    <dt><code>bcu.cmp5332.bookingsystem.auth</code></dt>
+    <dd>Handles user authentication, login/logout, and registration</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.commands</code></dt>
+    <dd>Contains all command implementations following the Command design pattern</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.data</code></dt>
+    <dd>Manages data persistence, loading, and storage operations</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.gui</code></dt>
+    <dd>Provides graphical user interface components using Java Swing</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.main</code></dt>
+    <dd>Contains application entry points and command parsing logic</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.model</code></dt>
+    <dd>Defines core domain models and business logic</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.test</code></dt>
+    <dd>Unit tests for validating system functionality</dd>
+    
+    <dt><code>bcu.cmp5332.bookingsystem.util</code></dt>
+    <dd>Utility classes for validation, formatting, and helper functions</dd>
+</dl>
+
+<h2>Getting Started</h2>
+<p>
+To use the system, run the <code>Main</code> class for CLI mode or use the <code>loadgui</code> 
+command to launch the graphical interface. Default admin credentials are provided in the documentation.
+</p>
+
+<h2>Design Patterns</h2>
+<ul>
+    <li><strong>Command Pattern:</strong> All operations are encapsulated as command objects</li>
+    <li><strong>Singleton:</strong> AuthenticationService ensures single authentication instance</li>
+    <li><strong>Factory:</strong> CommandParser creates appropriate command instances</li>
+    <li><strong>Data Access Object:</strong> DataManager classes handle persistence</li>
+</ul>
+
+<h2>Authors</h2>
+<p>Sushant Shrestha & Utsav Rai (Group_M9)</p>
+
+</body>
+</html>
